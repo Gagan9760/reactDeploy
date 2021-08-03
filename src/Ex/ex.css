@@ -1,0 +1,145 @@
+body{
+    font-family: 'Poppins';
+}
+/* NAV */
+.nav-bar{
+    background-color: cornflowerblue;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    min-height: 60px;
+    box-shadow: 0px 0px 10px 1px;
+}
+.nav-list{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    width: 50%;
+}
+.nav-list li{
+   height: 100%;
+   display: flex;
+   align-items: center;
+    padding: 0px 50px;
+    list-style: none;
+    color: white;
+}
+.nav-list li:hover{
+    background-color: rgb(78, 117, 189);
+}
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    width: 100px;
+    margin: 0px 20px;
+    font-weight:bolder;
+    color: white;
+    padding-left: 60px;
+    position: relative;
+}
+.logo::after{
+    content: '';
+    position: absolute;
+    top: 45px;
+    background-color: white;
+    height: 5px;
+    width: 0px;
+    transition: 0.2s all ease-in;
+}
+.logo:hover::after{
+    height: 5px;
+    width: 110px;
+}
+/* SAVING PAGE */
+
+.sav,.summary,.hero,.addition,.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: in 0.5s
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input,select{
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+input:hover{
+    border-color: cornflowerblue;
+    
+}
+.sav h1{
+    font-family:Verdana;
+    font-size: 2em;
+    line-height: 60px;
+     ;
+}
+p{
+    font-family:Verdana;
+    font-size: 2em;
+    line-height: 60px;
+    animation: in 0.5s ;
+}
+.total{
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: space-between;
+}
+@keyframes in {
+    from {transform: translateX(-50px);
+    opacity: 0;}
+    to {transform: translateX(0px);
+    opacity: 1;}
+}
+button{
+    border: none;
+    font-size: 1em;
+    padding: 10px;
+    height: 40px;
+    margin: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 30px;
+}
+.back{
+    width:200px
+}
+
+button:hover{
+    background-color:rgb(78, 117, 189);
+}
+.table{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table ul,.items{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.table ul li{
+    list-style: none;
+    font-weight: 900;
+}
+
+.items li{
+    line-height: 50px;
+    list-style: none;
+    width: 60px;
+}
