@@ -18,7 +18,7 @@ const Nav = ({view,setView}) => {
     }
     return (
         <div className="nav-bar">
-            <div className="logo">Wallet!!!</div>
+            <div className="logo">Wallet</div>
             <ul className="nav-list">
                 <li onClick={expensesView}>Expense</li>
                 <li onClick={incomeView}>Income</li>
