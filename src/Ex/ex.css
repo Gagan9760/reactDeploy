@@ -143,3 +143,42 @@ button:hover{
     list-style: none;
     width: 60px;
 }
+
+@media screen and (max-width: 500px) {
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        padding: 0%;
+    }
+    .nav-list li{
+       height: 100%;
+       display: flex;
+       align-items: center;
+        list-style: none;
+        color: white;
+        line-height: 40px;
+    }
+    .nav-bar{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .nav-list li:hover{
+        background-color: rgb(78, 117, 189);
+    }
+    .logo{
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        width: 100%;
+        margin: 0px;
+        font-weight:bolder;
+        color: white;
+       padding: 0;
+        position: relative;
+    }
+}
