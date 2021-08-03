@@ -159,7 +159,7 @@ button:hover{
        align-items: center;
         list-style: none;
         color: white;
-        line-height: 40px;
+        line-height: 30px;
     }
     .nav-bar{
         flex-direction: column;
