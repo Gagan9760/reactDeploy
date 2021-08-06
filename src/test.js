@@ -10,4 +10,4 @@ if(totalCm  >   100)
         totalCm = totalCm - 100
     }
 console.log(`The total measurement is
-            ${totalM} meters ${totalCm} cm`);      
+            ${totalM} meters ${totalCm} centimeters`);      
